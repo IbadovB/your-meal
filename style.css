@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(253, 249, 249);
+    background-color: rgb(230, 230, 230);
 }
 
 .header {
@@ -54,40 +54,96 @@ a .text {
     color: #000;
 }
 
+.basket-catalog {
+    padding-top: 3em;
+    background: #fff;
+}
+
 .catalog-section {
     display: flex;
-gap: 8em;
+    gap: 3em;
     /* height: 10em; */
 }
 
 .basket-header {
     display: flex;
-    gap: 3.5em;
+    gap: 9.8em;
+    justify-content: center;
+    align-items: center;
     /* padding-top: 0.5em; */
+    padding-bottom: 1em;
+    border-bottom: 1.5px solid rgb(228, 225, 225);
 
 }
 
-.orders{
-  
+
+.orders {
+    padding-top: 1em;
     display: flex;
     flex-direction: column;
-    gap: 0.5em;
+    gap: 1em;
 }
 
-.orders img{
- width: 4.5em;
- height: 4em;
+.orders img {
+    width: 4em;
+    height: 4em;
     /* font-size: 0.1em; */
-
-padding: 0.2em 0.3em;
+    padding: 0 0.3em 1em 0;
+    border-bottom: 1.5px solid rgb(228, 225, 225);
 }
-#total {
-    height: 0.8em;
-    padding: 0.5em 0;
-    width: 1.7em;
-    margin-top: 0.5em;
-    /* border-style:none; */
 
+
+.total-display {
+    /* height: 0.8em; */
+    padding: 0.3em 1em;
+    /* width: 1.7em; */
+    margin-top: 0.5em;
+    border: none;
+    background: #eeeeee;
+    font-size: 1em;
+
+
+}
+
+.selected-meal {
+    display: flex;
+    gap: 0.7em;
+    border-bottom: 1.5px solid rgb(228, 225, 225);
+}
+
+.selected-meal p {
+    font-size: 0.9em;
+}
+
+.selected-gramm {
+    font-size: 0.7em;
+    color: #B1B1B1;
+}
+
+.selected-price {
+    font-size: 0.8em;
+}
+
+.selected-information {
+    gap: 0.5em;
+    padding-right: 0.5em;
+    width: 7em;
+}
+
+.order-quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    background: #eeeeee;
+    border-radius:0.4em ;
+
+}
+
+.order-quantity button {
+    border: none;
+    background: none;
+    padding: 0.5em .9em;
 }
 
 .first-line,
