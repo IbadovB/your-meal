@@ -55,8 +55,10 @@ a .text {
 }
 
 .basket-catalog {
-    padding-top: 3em;
+    padding: 1.5em;
     background: #fff;
+    height: 33em;
+    border-radius: 1em;
 }
 
 .catalog-section {
@@ -136,7 +138,7 @@ a .text {
     align-items: center;
     height: 2em;
     background: #eeeeee;
-    border-radius:0.4em ;
+    border-radius: 0.4em;
 
 }
 
@@ -145,6 +147,30 @@ a .text {
     background: none;
     padding: 0.5em .9em;
 }
+
+.total-price {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2em 0;
+    font-size: 1.3em;
+}
+
+.order-regist {
+    padding: 1.3em 6em;
+    border-radius: 2em;
+    border: none;
+    background: #FF7020;
+    color: #fff;
+    font-size: 0.8em;
+}
+
+.delivery {
+    display: flex;
+    gap: 1.3em;
+    padding: 1.5em 0;
+}
+
+
 
 .first-line,
 .second-line {
