@@ -5,8 +5,7 @@
 }
 
 body {
-    background: #fff;
-    /* cursor: pointer; */
+    background: #F9F9F9;
 }
 
 .header {
@@ -17,7 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     padding-top: 2rem;
-    clip-path: ellipse(98% 100% at top);
+    clip-path: ellipse(129% 100% at top);
 }
 
 .head-text {
@@ -30,18 +29,34 @@ body {
 }
 
 .head-text1 {
-    font-size: 2em;
+    font-family: Nunito;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: center;
+
 }
 
 
 
 .head-text2 {
-    font-size: 2em;
+    font-family: Nunito;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: center;
     color: #FF5C00;
 }
 
 .head-text3 {
-    font-size: 1em;
+    font-family: Nunito;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16.37px;
+    letter-spacing: 0%;
+    text-align: center;
     padding-top: 1em;
 
 }
@@ -50,21 +65,29 @@ body {
 .menu {
     display: flex;
     flex-direction: column;
-    padding: 1.5em 1em 0 1em;
+    padding: 1.5em 0.5em 0 .3em;
 }
 
 .main-catalog {
     display: flex;
-    justify-content: center;
-    gap: 2em;
+    text-align: center;
+    gap: 0.5em;
     padding: 2em 0;
     overflow: auto;
     scrollbar-width: none;
-    line-height: 0.5em;
+
 }
 
-.main-catalog ::-webkit-scrollbar {
+.main-catalog::-webkit-scrollbar {
     width: 0;
+
+}
+
+.main-catalog button {
+    padding: 0;
+    border-radius: 15em;
+    border: none;
+    background: #fff;
 }
 
 .main-catalog a {
@@ -74,31 +97,35 @@ body {
     text-decoration: none;
     justify-content: center;
     align-items: center;
-    border: 0.01px solid rgb(255, 252, 252);
     border-radius: 5em;
-    box-shadow: 1em;
+    box-shadow: 0.5em solid #F2F2F3;
     height: 2em;
     padding: 4em;
 
+    border-style: none;
+
 }
-.main-catalog a img{
+
+.main-catalog a img {
     height: 6em;
+
 }
 
 .main-catalog a:hover {
     background-color: #FF5C00;
-    padding: 4em;
+
 }
 
-.main-catalog-pages {
-    padding: 5em;
-}
+
 
 a .text {
-    font-size: 3em;
-    padding-left: 0.5em;
+    font-family: Nunito;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16.37px;
+    letter-spacing: 0%;
     color: #000;
-    width: 4.5em;
+    width:5em
 }
 
 .basket-header {
@@ -106,14 +133,28 @@ a .text {
     gap: 3em;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5em;
+    padding: 1em 1.5em;
     background: #fff;
     border-radius: 1em;
 }
 
+.basket-text {
+    font-family: Nunito;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    width: 66;
+    height: 16;
+    top: 16px;
+    left: 10px;
+
+}
+
 .total-display {
+
     background-color: rgb(230, 230, 230);
-    padding: 0.3em 1.4em;
+    padding: 0.2em 1em;
     border-radius: .5em;
     font-size: .8em;
 }
@@ -122,10 +163,16 @@ a .text {
     padding-top: 2.5em;
     display: flex;
     flex-direction: column;
-    background: #fff;
+
 }
-.burgers-catalog h2{
-padding-left: 0.7em;
+
+.burgers-catalog h2 {
+    font-family: Nunito;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 33.6px;
+    letter-spacing: 0%;
+
 }
 
 .first-line {
@@ -136,12 +183,18 @@ padding-left: 0.7em;
     padding: 1.5em 0 2em 0;
 }
 
+.f-line-catalog {
+    padding: 0.8em 0.5em;
+    background: #fff;
+    border-radius: 0.5em;
+}
+
 .second-line {
     display: flex;
     gap: 0.5em;
     justify-content: space-around;
     align-items: center;
-    padding: 1.5em 0 5em 0;
+    padding: 0.5em 0 5em 0;
 }
 
 .catalog-text {
@@ -151,18 +204,42 @@ padding-left: 0.7em;
     padding-top: 0.5em;
 }
 
+.catalog-text .price {
+    font-family: Nunito;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0%;
+
+}
+
 .catalog-text p {
-    padding-bottom: 1.5em;
-    font-size: 0.85em;
+    font-family: Nunito;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15.6px;
+    letter-spacing: 0%;
+
 }
 
 .catalog-text .gramm {
-    font-size: 0.8em;
-    color: #B1B1B1;
+    font-family: Nunito;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15.6px;
+    letter-spacing: 0%;
     padding-bottom: 0.5em;
+    color: #B1B1B1;
+   
 }
 
 .add {
+
+    font-family: Nunito;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0%;
     padding: 0.7em 1em;
     font-size: 0.7em;
     border-radius: 5em;
@@ -174,11 +251,12 @@ padding-left: 0.7em;
 }
 
 footer {
+    background: #FFF;
     display: flex;
     flex-direction: column;
     /* height: 100%; */
     /* background: red; */
-    height: 30em;
+    height: 20em;
     padding: 1.5em 1em 0 1em;
 }
 
@@ -189,23 +267,63 @@ footer {
     padding-bottom: 1.5em;
 }
 
-.numb1,
-.social1 {
-    line-height: 2em;
+.numb1 {
+    font-family: Nunito;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0%;
 }
 
-.numb2 {
-    display: flex;
-    align-items: center;
-    line-height: 2em;
+.social1 {
+    font-family: Nunito;
+    font-weight: 400;
+    font-size: 1px;
+    line-height: 15.6px;
+    letter-spacing: 0%;
+
 }
+
+
 
 .social {
     padding-top: 1.5em;
 }
 
+.social1 {
+    font-family: Nunito;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0%;
+
+}
+
+.numb2 {
+    padding-top: 1em;
+    display: flex;
+    font-family: Nunito;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15.6px;
+    letter-spacing: 0%;
+    align-items: center;
+}
+
+
+
 .social2 {
+    padding-top: 0.8em;
     display: flex;
     width: 5em;
     justify-content: space-between;
+}
+
+.footer-text2 {
+    padding-top: 2.5em;
+    font-family: Nunito;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16.37px;
+    letter-spacing: 0%;
 }
