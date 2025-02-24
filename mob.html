@@ -92,10 +92,10 @@
 
         <div class="catalog-section">
             <div class="basket">
-                <div class="basket-header">
+                <button class="basket-header" onclick="basketList()">
                     <div class="basket-text">Корзина</div>
                     <div class="total-display">4</div>
-                </div>
+                </button>
                 <div class="basket-orders">
                     <div class="order1">
                         <div class="order-text">
@@ -108,9 +108,9 @@
                         </div>
 
                         <div class="order-quantity">
-                            <button class="minus">-</button>
+                            <button class="minus"  onclick="decreaseNumber()">-</button>
                             <div class="display-box">1</div>
-                            <button class="plus">+</button>
+                            <button class="plus" onclick="increaseNumber()">+</button>
                         </div>
 
                     </div>
@@ -151,7 +151,7 @@
                     </div>
 
 
-                </div>
+                
 
                 <div class="total-price">
                     <div class="total-price-text">Итого</div>
@@ -167,8 +167,10 @@
                 </div>
                     <button class="close-basket">Свернуть</button>
                 </div>
-
             </div>
+            </div>
+
+      
 
 
             <div class="burgers-catalog">

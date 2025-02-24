@@ -129,25 +129,36 @@ a .text {
     width: 5em
 }
 
+
+.catalog-section{
+    position: relative;
+}
+
 .basket {
+    position: absolute;
+    top: 0.1em;
+    border: none;
     display: flex;
     flex-direction: column;
-    gap: 1.5em;
+    gap: 1em;
     background: #FFFFFF;
-    padding: 1.5em 2em;
-    border-radius: 1em solid;
+    padding: 1em 0.5em;
+    border-radius: 1em;
     box-shadow: 0px 0px 10px 0px #00000029;
-   
+    width: 19.3em;
+    margin: 0 auto;
+
 }
 
 .basket-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0em .7em 1em 0.7em;
+    padding: 0 0.7em;
     background: #fff;
-    border-radius: 1em;
-    border-bottom: 1px solid #F2F2F3;
+    border: none;
+ 
+  
 }
 
 .basket-text {
@@ -163,14 +174,24 @@ a .text {
 
 }
 
-.order1,
+.order1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #F2F2F3;
+    border-bottom: 1px solid #F2F2F3;
+    padding: 0.4em 0;
+}
+
+
+
 .order2,
 .order3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #F2F2F3;
-    padding-bottom: 0.8em;
+    padding-bottom: 0.4em;
 }
 
 .order-text2 {
@@ -213,7 +234,6 @@ a .text {
     align-items: center;
     height: 1.3em;
     background: #F2F2F3;
-    ;
     border-radius: 0.4em;
 }
 
@@ -222,12 +242,16 @@ a .text {
     background: none;
     padding: 0.3em .5em;
 }
+.display-box{
+    font-size: 0.8em;
+}
 
 .basket-orders {
     display: flex;
     flex-direction: column;
     padding: 0 .5em;
     gap: 1em;
+    display: none;
 }
 
 .total-display {
@@ -318,7 +342,7 @@ a .text {
 }
 
 .burgers-catalog {
-    padding-top: 2.5em;
+     padding-top: 4em;
     display: flex;
     flex-direction: column;
 
@@ -339,7 +363,7 @@ a .text {
     gap: 0.5em;
     justify-content: space-around;
     align-items: center;
-    padding: 1.5em 0 2em 0;
+    padding: 0.5em 0 2em 0;
 }
 
 .f-line-catalog {
@@ -353,7 +377,7 @@ a .text {
     gap: 0.5em;
     justify-content: space-around;
     align-items: center;
-    padding: 0.5em 0 5em 0;
+    padding: 0.5em 0 4em 0;
 }
 
 .catalog-text {
